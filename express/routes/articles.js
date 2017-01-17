@@ -73,12 +73,13 @@ Article.find({}, function(err, data) {
 router.get('/', function(req, res, next) {
     var params = req.query;
     console.log(params);
-    res.render('index', { title: 'articles',  data: resData });
+    res.json(resData);
 });
 
 
 /* GET users listing. */
 router.post('/', function(req, res, next) {
+    console.log(req);
     var params = req.body;    
     if(params.author || params.title || params.body) {
         var instance = new Article({

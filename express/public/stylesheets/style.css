@@ -1,8 +1,130 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
 
-a {
-  color: #00B7FF; }
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    font: 12px/18px Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background: url('images/86b5df1e.png');
+}
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
 
-/*# sourceMappingURL=style.css.map */
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 50px;
+    background: #fff;
+    margin-bottom:  20px;
+    padding: 20px 40px;
+    font: bold 32px sans-serif;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.news_block {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #000;
+    margin-bottom: 20px;
+}
+
+.news_block__img {
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.news_block__title {
+    font: bold 18px sans-serif;
+    margin: 10px 0;
+}
+
+.news_block__description {
+    margin: 10px 0; 
+}
+
+.news_block__author {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.news_block__more-link {
+    float:  right;
+    color: #000;
+    text-decoration: none;
+}
+
+.news_block__more-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    width: 800px;
+    margin: -20px auto 0;
+    height: 20px;
+    position: relative;
+}
+
+.end {
+	color: red;
+}

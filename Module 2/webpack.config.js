@@ -44,11 +44,7 @@ module.exports = {
             {
               test: /\.js$/,
               exclude: /(node_modules|bower_components)/,
-              loader: 'babel?presets[]=es2015,plugins[]=transform-es2015-modules-commonjs'
-            },
-            {
-                test: /\.scss$/,
-                loader: 'style!css!autoprefixer?browsers=last 2 version!sass!resolve-url!sass?sourceMap'
+              loader: 'babel?presets[]=es2015,plugins[]=transform-es2015-modules-commonjs,plugins[]=transform-react-jsx'
             }
         ]
     },
