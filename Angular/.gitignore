@@ -1,0 +1,11 @@
+# Ignore npm stuff
+node_modules 
+
+# Ignore sublime's current workspace
+*.sublime-workspace
+
+# Also ignore window's thumbnails
+*.db
+
+# And don't push to repo builded files
+public/*
